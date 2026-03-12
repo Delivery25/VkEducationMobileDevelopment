@@ -17,23 +17,24 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             VkEducationMobileDevelopmentTheme {
-                AppDetailsScreen(
-                    Modifier
+                AppNavigation(
+                    modifier = Modifier
                         .fillMaxSize()
                         .safeDrawingPadding()
                 )
-                }
             }
         }
     }
-
+}
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    AppDetailsScreen(
-        Modifier
-            .fillMaxSize()
-            .safeDrawingPadding()
-    )
+    VkEducationMobileDevelopmentTheme {
+        AppNavigation(
+            modifier = Modifier
+                .fillMaxSize()
+                .safeDrawingPadding()
+        )
+    }
 }

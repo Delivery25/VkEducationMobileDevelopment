@@ -89,6 +89,7 @@ private fun getCategoryText(category: Category): String = when (category) {
     Category.GAME -> stringResource(R.string.category_game)
     Category.FINANCE -> stringResource(R.string.category_finance)
     Category.TOOLS -> stringResource(R.string.category_tools)
+    Category.TRANSPORT -> stringResource(R.string.category_transport)
 }
 
 @Preview
